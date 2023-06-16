@@ -4,7 +4,7 @@
 
 1. Добавить в [Secret Manager](https://console.cloud.google.com/security/secret-manager/secret) переменные окружения: STRIPE_WEBHOOK_SECRET и STRIPE_API_KEY
 2. cd ./functions
-3. npm run deploy:only
+3. npm run deploy
 
 
 ## Описание функций
@@ -98,6 +98,7 @@ Function URL (feature_pay_back:createUserPayoutAccount(us-central1)): https://cr
 Function URL (feature_pay_back:createUserPayoutAccountLink(us-central1)): https://createuserpayoutaccountlink-6brgh4tqza-uc.a.run.app
 Function URL (feature_pay_back:userMoneyRequest(us-central1)): https://usermoneyrequest-6brgh4tqza-uc.a.run.app
 Function URL (feature_pay_back:stripeWebhook(us-central1)): https://stripewebhook-6brgh4tqza-uc.a.run.app
+Function URL (feature_pay_back:checkUserPayoutStripeAccountExists(us-central1)): https://checkuserpayoutstripeaccountexists-6brgh4tqza-uc.a.run.app
 
 
 ## Коллекции

@@ -35,5 +35,6 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "no-case-declarations": "off",
     "operator-linebreak": "off",
+    "linebreak-style": "off",
   },
 };
