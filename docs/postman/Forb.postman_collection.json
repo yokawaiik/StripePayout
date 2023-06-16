@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "3bfced60-e485-4868-b3ae-273e77d74762",
+		"name": "Forb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27895804",
+		"_collection_link": "https://martian-water-207779.postman.co/workspace/AppBooster~17e096bf-47f6-4412-9513-161fff35b761/collection/27895804-3bfced60-e485-4868-b3ae-273e77d74762?action=share&creator=27895804&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "feature_pay_back:createUserPayoutAccount",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm9yYi1lZmViYSIsImF1ZCI6ImZvcmItZWZlYmEiLCJhdXRoX3RpbWUiOjE2ODY5MTk3MTAsInVzZXJfaWQiOiJUNHdwVWI0dllvUTcwNzFlZ2dTRlBOdGE1ckUzIiwic3ViIjoiVDR3cFViNHZZb1E3MDcxZWdnU0ZQTnRhNXJFMyIsImlhdCI6MTY4NjkxOTcxMCwiZXhwIjoxNjg2OTIzMzEwLCJlbWFpbCI6ImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.lSOu-NTOHuZCQxkl-QGE7csA7dA-0V_6r8JMzQlxxUggTQDk2tAYJB68eJQ-swL3acygMyaExYODDrfo6YVbWZICMztTWeCnlpuv-FlPyoDjyvdF7jia1V_JNhn9YzsgBOBSyJryUV1g1nikEhfRDFLyPRnXdDiRxyDsG9SJRsKjPubIsWDlWbUfS7bYLohHTkg1-EZ_P5B-IsGESlBszBK1fYvvINwPNbCPXnmTbAnKbEAXZ9iPQyeELPJP4XneL3-BDa1CuqDJAr19hNNpkaE7NR2OJ1oDpLB37n5gTvvM9rIaiI3-Jo6MYazICNbnwctzsLvHl-VkWed0OFhy4w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://createuserpayoutaccount-6brgh4tqza-uc.a.run.app",
+					"protocol": "https",
+					"host": [
+						"createuserpayoutaccount-6brgh4tqza-uc",
+						"a",
+						"run",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feature_pay_back:userMoneyRequest",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm9yYi1lZmViYSIsImF1ZCI6ImZvcmItZWZlYmEiLCJhdXRoX3RpbWUiOjE2ODY5NDQ1MTMsInVzZXJfaWQiOiJUNHdwVWI0dllvUTcwNzFlZ2dTRlBOdGE1ckUzIiwic3ViIjoiVDR3cFViNHZZb1E3MDcxZWdnU0ZQTnRhNXJFMyIsImlhdCI6MTY4Njk0NDUxMywiZXhwIjoxNjg2OTQ4MTEzLCJlbWFpbCI6ImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.Vh8mEOK0S2QWybSX39GUdhMRfaYHzatXlrxd0nQO304leCbplITb1NcJGAYTfyyO-_e0Cir4W8t0GCrANny8Mu5YkVsdGSFWZlTM1uFYEia8yTDgPNPhRFzK9HzAg1hLhMg70UZe5go-_RK5oGMJvOrCdPVufGB6B4hNU5_G_daaTDWqDvjViSwXdu6U-xYgHT0Rf85rHlN8GXfHuPkN4SJobpuu6kCp9qHWiYP5FC0cDohFuIO4pk7KZWl8SG6wFUDHKK-C7yovAjA6SuANe87yO-Owr9mr1VM6J4eg8307ZDQdb-kgUOxrJ6U3R2TA-TyvA8XEnHzof0rfxRcGAw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "amount",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://usermoneyrequest-6brgh4tqza-uc.a.run.app",
+					"protocol": "https",
+					"host": [
+						"usermoneyrequest-6brgh4tqza-uc",
+						"a",
+						"run",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feature_pay_back:createUserPayoutAccountLink",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm9yYi1lZmViYSIsImF1ZCI6ImZvcmItZWZlYmEiLCJhdXRoX3RpbWUiOjE2ODY5Mzg5NzYsInVzZXJfaWQiOiJUNHdwVWI0dllvUTcwNzFlZ2dTRlBOdGE1ckUzIiwic3ViIjoiVDR3cFViNHZZb1E3MDcxZWdnU0ZQTnRhNXJFMyIsImlhdCI6MTY4NjkzODk3NiwiZXhwIjoxNjg2OTQyNTc2LCJlbWFpbCI6ImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.RjtnkfOFnRk1AX59AT15XIFwVWG0vWwBS45b5iG_0AwyM3G_1OVEVG_oX3YAkMxvK-LktjzDnviSuGhiB5H7-Dt8mb1Xgh_rSHuTni746D1fxChJfaqQRiBOYXB5bSvfl-xMkazQg-1Ev1uqPZr6kushtmIKZhouW4E5HO5a0Lj4AqysFJ-GEeSRdGDfflElxOJUc84-arkdIEDzAJsguIvnIhsu4HRciWy2NqoWh5ZGArkhT8AxGQWbIpkDNXAoP6cHnPtVHGpMSgUGpW9sYrZHmZG8YcNnrtW5qU2t3Bzfx87Qg5quluJqzkNjrb753bDCFB9sX1qDLRtZUt5hrA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://createuserpayoutaccountlink-6brgh4tqza-uc.a.run.app",
+					"protocol": "https",
+					"host": [
+						"createuserpayoutaccountlink-6brgh4tqza-uc",
+						"a",
+						"run",
+						"app"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feature_pay_back:checkUserPayoutStripeAccountExists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY3YmFiYWFiYTEwNWFkZDZiM2ZiYjlmZjNmZjVmZTNkY2E0Y2VkYTEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZm9yYi1lZmViYSIsImF1ZCI6ImZvcmItZWZlYmEiLCJhdXRoX3RpbWUiOjE2ODY5NDkzMTEsInVzZXJfaWQiOiJUNHdwVWI0dllvUTcwNzFlZ2dTRlBOdGE1ckUzIiwic3ViIjoiVDR3cFViNHZZb1E3MDcxZWdnU0ZQTnRhNXJFMyIsImlhdCI6MTY4Njk0OTMxMSwiZXhwIjoxNjg2OTUyOTExLCJlbWFpbCI6ImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImFnZW50Lnplcm8ucGxhdGludW1AZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.N_EcUuvbFuCpMSBKeOcZv97gXXpvlf3Owj2awxBsIWLE3VhNk-NgvikXd-cPiR-rqVmVgo8Sa2GFJddCVpM3zUeaFRs42R9UVFle52jxrQz3ibej1qOMyb-QqEK6bcsxcx1fDy_NSRDDmSOJWoEjYzl1qzM3wSU-bGwl3SgUzclTbObLgF0T-oSkmkV9gdw2o6b9itS8-8XdZk8x6NUPj7-QaYMDR85-B4v7P9eMlh8LwY_5lb_iHQIOi4ufDmVpe1qKs05_f87CFlEfl1JjWq0R5K-Lv3eMn5q6ZxOtHQNG-U-CT2OTTY1ZESMcsULXxhvsabzZvjey4i5PFKBaXg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://checkuserpayoutstripeaccountexists-6brgh4tqza-uc.a.run.app",
+					"protocol": "https",
+					"host": [
+						"checkuserpayoutstripeaccountexists-6brgh4tqza-uc",
+						"a",
+						"run",
+						"app"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
