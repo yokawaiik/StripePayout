@@ -77,7 +77,9 @@ export const checkUserPayoutStripeAccountExists = onRequest(
 
       if (retrievedStripeAccount.charges_enabled === false) {
         response.status(200).send({
-          message: "Account is exists but user has to finish register his payout account.",
+          result: false,
+          message:
+            "Account is exists but user has to finish register his payout account.",
         });
         return;
       }
