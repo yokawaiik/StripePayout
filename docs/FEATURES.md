@@ -81,10 +81,10 @@
 ### GET: checkUserPayoutStripeAccountExists
 Запрос нужен для того, чтобы проверить есть ли аккаунт пользователя на платформе Stripe или он был удален. Это актуально для тех случаев, когда пользователь удалил аккаунт и пытается сделать вывод средств. Можно проверять перед нажатием действия вывода средств существует ли аккаунт и если нет, то делаем пометку в документе **stripe_payout_accounts** в поле **status**, что аккаунт Inactive или вообще удалить документ, а после дать пользователю ответ, что требуется создать новый аккаунт.
 #### Объект положительного ответа
-{ 
-    result: true, // or false if not found (removed from Stripe platform)
-    message: "User connected account exists." // or another message
-}
+    { 
+        result: true, // or false if not found (removed from Stripe platform)
+        message: "User connected account exists." // or another message
+    }
 
 ### POST: stripeWebhook
 Смысл метода в том, чтобы обновлять документ пользователя в коллеции **stripe_payout_accounts**, а именно поле **status** для того, чтобы отслеживать если подключенный пользовательский аккаунт может осуществлять вывод средств (выплаты).
@@ -115,11 +115,11 @@ Function URL (feature_pay_back:checkUserPayoutStripeAccountExists(us-central1)):
     status: string (Inactive/Active)
 
 ### stripe_withdrawal_checks
-ID: transferObject ID
-amount: string
-createdAt: Date
-customerUID: string
-transferObject: Содержание события соответсвует оригиналу: https://stripe.com/docs/api/transfers/object
+    ID: transferObject ID
+    amount: string
+    createdAt: Date
+    customerUID: string
+    transferObject: Содержание события соответсвует оригиналу: https://stripe.com/docs/api/transfers/object
 
 ### stripe_errors
     ID: random UUID
