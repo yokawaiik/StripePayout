@@ -17,7 +17,6 @@ export const createUserPayoutAccountDocument = async (
     await stripeIntegrationConfig.customers.doc(decodedUserToken!.uid).set({
       uid: decodedUserToken.uid,
       id: createdUserPayoutAccount?.id,
-      email: decodedUserToken?.email,
       updatedAt: Date(),
       createdAt: Date(),
       status: UserPayoutAccountStatus.Inactive,

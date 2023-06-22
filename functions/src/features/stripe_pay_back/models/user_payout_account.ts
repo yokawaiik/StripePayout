@@ -7,7 +7,6 @@ import { UserPayoutAccountStatus } from "./user_payout_account_status";
 export class UserPayoutAccount {
   uid: string;
   id: string;
-  email: string;
   updatedAt: Date;
   createdAt: Date;
   status: UserPayoutAccountStatus;
@@ -15,14 +14,12 @@ export class UserPayoutAccount {
   constructor(
     uid: string,
     id: string,
-    email: string,
     updatedAt: Date,
     createdAt: Date,
     status: UserPayoutAccountStatus
   ) {
     this.uid = uid;
     this.id = id;
-    this.email = email;
     this.updatedAt = updatedAt;
     this.createdAt = createdAt;
     this.status = status;

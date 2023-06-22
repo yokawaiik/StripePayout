@@ -65,15 +65,22 @@ export const checkUserPayoutStripeAccountExists = onRequest(
         return;
       }
 
-      const UserPayoutAccount = await getUserPayoutAccountByUID(
+      const userPayoutAccount = await getUserPayoutAccountByUID(
         stripeIntegrationConfig,
         decodedUserToken!.uid
       );
 
-      await retrieveUserPayoutStripeAccount(
+      const retrievedStripeAccount = await retrieveUserPayoutStripeAccount(
         stripeIntegrationConfig,
-        UserPayoutAccount.id
+        userPayoutAccount.id
       );
+
+      if (retrievedStripeAccount.charges_enabled === false) {
+        response.status(200).send({
+          message: "Account is exists but user has to finish register his payout account.",
+        });
+        return;
+      }
 
       response
         .status(200)

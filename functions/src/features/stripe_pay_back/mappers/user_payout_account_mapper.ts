@@ -8,7 +8,6 @@ export class UserPayoutAccountMapper {
     return new UserPayoutAccount(
       data["uid"] ?? null,
       data["id"] ?? null,
-      data["email"] ?? null,
       data["updatedAt"] ?? null,
       data["createdAt"] ?? null,
       data["status"] ?? null

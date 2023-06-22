@@ -110,7 +110,6 @@ Function URL (feature_pay_back:checkUserPayoutStripeAccountExists(us-central1)):
 ### stripe_payout_accounts
     ID: STRIPE CONNECT USER ID
     id: string
-    email: string
     updatedAt: Date
     createdAt: Date
     status: string (Inactive/Active)
