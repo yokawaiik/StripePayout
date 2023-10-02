@@ -112,8 +112,8 @@ export const userMoneyRequest = onRequest(
       );
       if (!stripeUserAccountExists) {
         response.status(400).send({
-          error: "Account creating error",
-          message: "Account already exists.",
+          error: "Account not found",
+          message: "For the first time register your Conect account.",
         });
         return;
       }

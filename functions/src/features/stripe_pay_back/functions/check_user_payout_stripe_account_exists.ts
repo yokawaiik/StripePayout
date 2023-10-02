@@ -75,7 +75,7 @@ export const checkUserPayoutStripeAccountExists = onRequest(
         userPayoutAccount.id
       );
 
-      if (retrievedStripeAccount.charges_enabled === false) {
+      if (retrievedStripeAccount.payouts_enabled === false) {
         response.status(200).send({
           result: false,
           message:
